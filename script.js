@@ -27,7 +27,7 @@ const randomNumber = () => {
   console.log(time)
   let num = random();
   genNumber.innerHTML = num;
-  if(time == 5) {
+  if(time == 10) {
     clearInterval(count);
     genNum();
   }
@@ -35,7 +35,7 @@ const randomNumber = () => {
 
 
 const generate = () => {
-  count = setInterval(randomNumber, 50);
+  count = setInterval(randomNumber, 20);
 }
 
 const callTimer = () => {
